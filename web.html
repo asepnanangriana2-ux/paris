@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi Produk Spesial</title>
+    <style>
+        /* Reset & Font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Card Promo */
+        .promo-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .promo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Bagian Gambar */
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: #e2e8f0; /* Warna cadangan jika gambar belum diisi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #64748b;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* Badge Diskon */
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #ef4444;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Konten Teks */
+        .promo-content {
+            padding: 25px;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #3b82f6;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            color: #1e293b;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .product-description {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Bagian Harga */
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .original-price {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            text-decoration: line-through;
+        }
+
+        .promo-price {
+            font-size: 1.6rem;
+            color: #10b981;
+            font-weight: 800;
+        }
+
+        /* Tombol Aksi */
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: #25d366; /* Warna Hijau WhatsApp */
+            color: black;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #128c7e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Komponen Kartu Promosi -->
+    <div class="promo-card">
+        <!-- Gambar Produk -->
+        <div class="product-image">
+            <!-- Ganti 'placeholder.jpg' dengan URL atau nama file gambarmu -->
+            <img src="https://via.placeholder.com/400x250" alt="Nama Produk" style="width:100%; height:100%; object-fit:cover;">
+            <div class="discount-badge">Hemat 30%</div>
+        </div>
+
+        <!-- Konten Promosi -->
+       <div class="promo-content">
+            <p class="category">Gadget & Elektronik</p>
+            <h2 class="product-title">handphone infix gt 20</h2>
+            <p class="product-description">
+                Tingkatkan produktivitas dan pantau kesehatanmu setiap hari dengan layar AMOLED super jermih dan baterai tahan hingga 9999 hari
+            </p>
+
+            <!-- Harga -->
+            <div class="price-section">
+                <span class="original-price">Rp 3.500.000</span>
+                <span class="promo-price">Rp 900.000</span>
+            </div>
+
+            <!-- Tombol Beli / Hubungi -->
+            <!-- Ganti nomor WhatsApp di bawah ini sesuai kebutuhanmu -->
+            <a href="https://wa.me/6285885963749?text=Halo,%20saya%20tertarik%20dengan%20handphone gt%20Pro" class="cta-button" target="_blank">
+                Beli Sekarang via WhatsApp fefeq jule
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
